@@ -1,0 +1,15 @@
+const counter = 40;
+const timer = 10000;
+(async () => {
+for (let i = 0; i < counter; i++) {
+document.getElementsByClassName("flat_button button_small button_wide")[i].click();
+await delay();
+}
+console.log("shark");
+})();
+
+function delay() {
+return new Promise((resolve, reject) => {
+setTimeout(resolve, timer);
+});
+}

@@ -1,0 +1,15 @@
+const counter = 100;
+const timer = 10000;
+(async () => {
+for (let i = 0; i < counter; i++) {
+document.getElementsByClassName("js-entity-accept button-pro __sec __small __wide")[i].click();
+await delay();
+}
+console.log("burtas_shark");
+})();
+
+function delay() {
+return new Promise((resolve, reject) => {
+setTimeout(resolve, timer);
+});
+}
